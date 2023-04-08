@@ -1,5 +1,7 @@
 # CalendarAngularWebsockets
-
+## mini example calendar angualr and sass
+![](./src/assets/calendar_angualr.png)
+![](./src/assets/calendar_angular2.png)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.6.
 
 ## Development server

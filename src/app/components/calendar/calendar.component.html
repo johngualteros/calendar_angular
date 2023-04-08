@@ -1,0 +1,32 @@
+<app-header></app-header>
+<div class="container">
+  <!-- month -->
+  <h2>Abril</h2>
+  <!-- days -->
+  <div class="container_days">
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">Wednesday</div>
+    <div class="day">Thursday</div>
+    <div class="day">Friday</div>
+    <div class="day">Saturday</div>
+    <div class="day">Sunday</div>
+  </div>
+  <!-- days number -->
+  <div class="container_days_number">
+    <div class="day_number" *ngFor="let day of days_number">
+      <!-- number day -->
+      <div class="number">
+        {{day.day_number}}
+      </div>
+      <div class="content">
+        <div class="hour">
+          {{day.task.hour}}
+        </div>
+        {{day.task.name.slice(0, 20)}}
+        {{day.task.name.length > 10 ? '...' : ''}}
+        <div class='color' [ngStyle]="{'background-color':day.task.color}"></div>
+      </div>
+    </div>
+  </div>
+</div>
